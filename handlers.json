@@ -2,19 +2,19 @@
   {
     "command": "gh-repos",
     "pkg": "../lib/repos",
-    "tokenVar": "SLACK_GITHUB_TOKEN",
+    "tokenVar": "SLACK_GITHUB_REPOS_TOKEN",
     "options": {}
   },
   {
     "command": "gh-issue",
     "pkg": "../lib/issue",
-    "tokenVar": "SLACK_GITHUB_TOKEN",
+    "tokenVar": "SLACK_GITHUB_ISSUE_TOKEN",
     "options": {}
   },
   {
     "command": "gh-repo",
     "pkg": "../lib/repo",
-    "tokenVar": "SLACK_GITHUB_TOKEN",
+    "tokenVar": "SLACK_GITHUB_REPO_TOKEN",
     "options": {}
   }
 ]
