@@ -1,2 +1,4 @@
-/node_modules
+node_modules/
+mochawesome-reports/
+coverage/
 npm-debug.log

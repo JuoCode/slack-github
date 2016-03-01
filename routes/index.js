@@ -26,13 +26,11 @@ nconf.env();
 /* ROUTE DEFINITIONS */
 
 // Slack Slash Commands
-router.post('/svc/slack/:command', handleSlackRequest);
+router.all('/svc/slack/:command', handleSlackRequest);
 
 // Servo Health Check
 router.get('/_health', function (req, res) {
-  res.send({
-    'status': 'ok'
-  });
+  res.send({ 'status': 'ok' });
 });
 
 /* REGISTER HANDLERS */
@@ -84,7 +82,7 @@ function respondToSlackRequest(req, res, handlerError, handlerResponse) {
     // Handle response objects
     isDelayedResponse = handlerResponse.isDelayedResponse;
     delete handlerResponse.isDelayedResponse;
-    resObj = _.assign({}, defaultResponseObj, handlerResponse);    
+    resObj = _.assign({}, defaultResponseObj, handlerResponse);
   }
 
   if (isDelayedResponse) {

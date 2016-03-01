@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "command": "gh",
+    "pkg": "../lib/github",
+    "tokenVar": "SLACK_GITHUB_TOKEN",
+    "options": {}
+  }
+]
